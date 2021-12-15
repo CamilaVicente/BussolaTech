@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');// para conectar com o banco de dados
 
 const usersSchema = new mongoose.Schema({
+   
     name: {
         type: String,
         required: true

@@ -1,5 +1,5 @@
 const Users = require('../models/alunosSchema');
-
+const mongoose = require('mongoose')
 
 const getAll = async(req, res) => {
     try{
