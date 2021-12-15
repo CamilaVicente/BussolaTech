@@ -8,4 +8,3 @@ app.listen(PORT, ()=>{
 
 
 
-//mongodb+srv://camilaVicente:Lami020194@cluster0.6afgq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
