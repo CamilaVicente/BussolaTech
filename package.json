@@ -1,0 +1,25 @@
+{
+  "name": "projetofinalreprograma",
+  "version": "1.0.0",
+  "description": "\"Projeto Final Curso Reprograma\" ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilaVicente/ProjetoFinalReprograma.git"
+  },
+  "author": "\"Camila Vicente\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilaVicente/ProjetoFinalReprograma/issues"
+  },
+  "homepage": "https://github.com/CamilaVicente/ProjetoFinalReprograma#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}
