@@ -1,7 +1,5 @@
 const express = require("express");
-
 const router = express.Router();
-
 const controller = require("../controllers/alunosController");
 
 router.get("/all", controller.getAll)
