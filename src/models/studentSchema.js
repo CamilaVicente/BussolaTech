@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');// para conectar com o banco de dados
 
-const usersSchema = new mongoose.Schema({
+const studentSchema = new mongoose.Schema({
+    
     id: mongoose.Schema.Types.ObjectId,
    
     name: {
@@ -12,11 +13,11 @@ const usersSchema = new mongoose.Schema({
         required: true, // é obrigatório
         unique: true// unico
     },
-    idade: {
+    age: {
         type: Number,
         required: true
     },
 } , {timestamps: true})
 
 
-module.exports = mongoose.model("aluno", usersSchema)
+module.exports = mongoose.model("student", studentSchema)

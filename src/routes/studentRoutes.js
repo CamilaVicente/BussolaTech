@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const controller = require("../controllers/alunosController");
+const controller = require("../controllers/studentController");
 
 router.get("/all", controller.getAll)
+router.post("/newRegister", controller.newRegister)
 
-module.exports = router;
+module.exports = router
 
 
 
