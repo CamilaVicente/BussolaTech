@@ -1,8 +1,8 @@
 const StudentSchema = require('../models/studentSchema');
 const mongoose = require('mongoose');
-const studentSchema = require('../models/studentSchema');
 
-const getAll = async(req, res) => {
+
+const searchAll = async(req, res) => {
     try{
         const students = await StudentSchema.find();
         res.status(200).json({
@@ -13,6 +13,18 @@ const getAll = async(req, res) => {
         res.status(500).json({
             message: error.message
         })
+    }
+}
+
+const searchForId = async(req, res)=>{
+    try{
+        const studentId = await StudentSchema.findById(req.params.id)
+        res.status(200).json(studentId)    
+    }catch(error){
+        res.status(500).json({
+            message: error.message
+        })
+
     }
 }
 
@@ -40,6 +52,7 @@ const newRegister = async (req, res) => {
 
 
 module.exports ={
-    getAll,
-    newRegister
+    searchAll,
+    newRegister,
+    searchForId
 }

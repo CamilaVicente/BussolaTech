@@ -13,7 +13,7 @@ const connect = async () => {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
-        console.log("Banco conectado, Até que enfim!!!!!!!!!!!!")
+        console.log("Connected DataBase, Oh Glória!!!")
     } catch (error) {
         console.log(error.message)
     }
