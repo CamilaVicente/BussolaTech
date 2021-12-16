@@ -1,5 +1,6 @@
 const StudentSchema = require('../models/studentSchema');
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const studentSchema = require('../models/studentSchema');
 
 const getAll = async(req, res) => {
     try{
@@ -14,6 +15,7 @@ const getAll = async(req, res) => {
         })
     }
 }
+
 const newRegister = async (req, res) => {
     try {
         const student = new StudentSchema({
