@@ -11,13 +11,17 @@ const studentSchema = new mongoose.Schema({
     email: {
         type: String,// tipo do dado
         required: true, // é obrigatório
-        unique: true// unico
+        unique: true,// unico
+        lowercase:true// converte em caixa baixa
     },
-    age: {
-        type: Number,
-        required: true
-    },
+    password:{
+        type: String,
+        required: true,
+        select: false //pra quando buscar no bd essa informação não vir na consulta
+    }
 } , {timestamps: true})
 
 
-module.exports = mongoose.model("student", studentSchema)
+const Students = mongoose.model("Students", studentSchema);
+
+module.exports = Students;
