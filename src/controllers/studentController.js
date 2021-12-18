@@ -1,5 +1,5 @@
 const Students = require('../models/studentSchema');
-
+const mongoose = require('mongoose');
 
 
 //GET/todo //Rota que retorna uma lista com todos os itens 

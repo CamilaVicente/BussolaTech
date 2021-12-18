@@ -100,6 +100,7 @@ const deleteC = async (req, res) => {
 }
 module.exports = {
     getAll,
+    search,
     updateCourse,
     deleteC,
     newCourse
