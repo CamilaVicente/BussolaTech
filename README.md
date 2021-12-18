@@ -46,7 +46,11 @@ cursos e plataformas gratuitas para estudar e tirar dúvidas.
 - Deletar cursos ou cadastro de alunos;
 <br>
 
-## 📚 Aprendizados
+## 📚 Wireframe
+
+<p align="center">
+<img src="./Wireframe.png" width="350" height="300"/>
+</p>
 
 O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). 
 
