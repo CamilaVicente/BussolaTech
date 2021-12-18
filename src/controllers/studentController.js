@@ -16,7 +16,8 @@ const searchAll = async (req, res) => {
         })
     }
 }
-//GET/:id //Rota que retorna por ID
+//GET/:id //Rota que retorna os detalhes sobre algum item, baseado no seu id.
+
 const searchForId = async (req, res) => {
     try {
         const studentId = await Students.findById(req.params.id)
@@ -47,7 +48,7 @@ const registerStudent = async (req, res) => {
 }
 
 
-//PUT/:id //
+//PUT/:id //Rota que atualiza algum dado e retorna o atualizado.
 
 const updateStudent = async (req, res) => {
     try{
