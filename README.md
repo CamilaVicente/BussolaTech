@@ -1,9 +1,9 @@
-# Bussola Tech - Back End
+# Projeto Final {Reprograma}
 Bussola Tech 2021
 
 <h1 align="center">
     <br>
-    <p align="center">Projeto Final {Reprograma}<p>
+    <p align="center">Bussola Tech - Back End<p>
 </h1>
 <p align="center">
 <img src="./Pro-league.png" width="350" height="300"/>
