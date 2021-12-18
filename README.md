@@ -6,7 +6,7 @@ Bussola Tech 2021
     <p align="center">Bussola Tech - Back End<p>
 </h1>
 <p align="center">
-<img src="./Pro-league.png" width="350" height="300"/>
+<img src="./Pro-league.png" width="300" height="300"/>
 </p>
 <br>
 
@@ -14,41 +14,54 @@ Bussola Tech 2021
 
 <br>
 
- API desenvolvida como Projeto Final com o auxílio da professora Paula Allemand para a conclusão do curso de Backend  [{Reprograma}](https://reprograma.com.br/)
+<p align="justify">Este projeto consiste em reduzir o deficit educacional e o deficit de diversidade na área de tecnologia gerando acesso a cursos gratuitos na área de TI.  
 
-<p align="justify">
+<p align="justify">Visando como público alvo mulheres em situações de vulnerabilidade social, econômica e de gênero, preferencialmente negras e/ou transgênero.
+<p align="justify">A pauta da diversidade na tecnologia só faz sentido dentro de uma visão que abrange a pluralidade das pessoas, uma pesquisa realizada pelo PretaLab em parceria com a Thoughtworks, entre o mês de novembro de 2018 e março de 2019, levantou dados sobre os perfis dos profissionais de tecnologia do Brasil.    
+<p align="justify">As mulheres atuam 31,7% dos cargos, e mesmo com o crescimento das mulheres no segmento, ainda existem muitas barreiras para enfrentar e uma dessas barreiras começa pelo início nos estudos no segmento da tecnologia.
+<p align="justify">Muitas ações falam em diversidade, mas só contemplam mulheres brancas, cis, heterossexuais.
+<p align="justify">A estimativa feita pela Associação Nacional de Travestis e Transexuais (Antra), com base em dados colhidos nas diversas regionais da entidade, aponta que 90% das pessoas trans recorrem a prostituição ao menos em algum momento da vida. 
+<p align="justify">A Bússola Tech acredita que iniciando sua carreira e investindo em capacitação na TI, lhe proporcionará mais autonomia, principalmente quando projetos sociais que buscam incluir pessoas vulneráveis dão todo suporte.
 
-<p align="justify">
-<p align="justify">
-
-<br><br>
+<br>
+<br>
 
 ## 🚀 Descrição da API Bussola Tech
 
 <br>
 
-<p align="justify">O projeto consiste em uma API REST para uma plataforma de cursos gratuitos , onde iniciantes na programação podem achar indicações de
+<p align="justify">Inicialmente o projeto consiste em uma API REST para uma plataforma de cursos gratuitos , onde iniciantes na programação podem achar indicações de
 cursos e plataformas gratuitas para estudar e tirar dúvidas.
 
 <p align="justify">A interface é um CRUD completo integrado com o banco de dados, onde é possível fazer cadastros, atualizar os dados e deletar informações de alunos e cursos.
 
+    
+ API desenvolvida como Projeto Final para conclusão do curso de Backend  [{Reprograma}](https://reprograma.com.br/)
 
   
 <br>
+<br>
+    
+## 🔗 Fontes 
 
-## ⚙️ Funcionalidades/Objetivos
+- [Pesquisa PretaLab](https://www.pretalab.com/dados)
+- [#QuemCodaBR](https://assets-global.website-files.com/5b05e2e1bfcfaa4f92e2ac3a/5d671881e1161a6d2b8eb78b_Pesquisa%20QuemCodaBR.pdf)
+- [Profissas](https://www.profissas.com.br/diversidade-e-inclusao-na-tecnologia/)
+- [Antra](https://antrabrasil.org/)
+    
+<br>
+<br>
+    
+## ⚙️ Funcionalidades
 
 - Listar todas as pessoas e cursos que estão cadastrados no sistema;
 - Conseguir visualizar o cadastro de alunos pelo Id;
 - Listar cursos pela area ou pelo nome;
 - Cadastrar pessoas que estejam em caso de vulnerabilidade social;
 - Atualizar informaçẽs de cursos e de alunos;
-- Deletar cursos ou cadastro de alunos;
+- Deletar cursos ou cadastro de alunos
+    
 <br>
-
-## 📚 Aprendizados
-
-O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). 
 
 <br>
 
@@ -158,7 +171,15 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 *  Terminar implementação de código Front-end,utilizando algum framework. Para o usuário ter a interação na tela.
 * Criar endpoints e permissões de administradores para plataforma.
 
-
 Estou aberta a opiniões, caso queiram contribuir com meu projeto.
 
 <br>
+
+## 🥰 Agradecimentos
+
+<p align="justify"> Agradeceço a todas as Mulheres que dedicaram seu tempo e suas energias para compartilhar conhecimento e nos oferecer um aprendizado de qualidade e um agradecimento especial a Hannah Freitas!!! MUITO OBRIGADO POR TUDO!!!! 
+<p align="justify">Galera segue os Links dessa Super Deva:
+
+- [Hannah Freitas](https://github.com/HannahFreitas)
+- [LinkedIn](https://www.linkedin.com/in/hannahcfreitas/) 
+    
