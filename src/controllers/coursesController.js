@@ -1,7 +1,6 @@
-//PUT/:id //Rota que atualiza algum dado e retorna o atualizado.
-
 const Courses = require("../models/coursesSchema");
-//GET/todo //Rota que retorna uma lista com todos os itens 
+
+
 const getAll = async (req, res) => {
     try {
         const courses = await Courses.find();
@@ -15,11 +14,28 @@ const getAll = async (req, res) => {
         })
     }
 }
-const searchForName = async (req, res)=>{
-    const {name} = req.body
+const search = async (req, res)=>{
+
+    const {name , stack} = req.query
+
+    const courses = await Courses.find();
+   
+
+    if(name){
+        courses = courses.filter(Courses =>{
+            return Courses.name.toLocaleLowerCase().includes(name)
+        })
+    }
+    if(stack){
+        courses = courses.filter(Courses =>{
+            return Courses.stack.toLocaleLowerCase().includes(stack)
+        })
+    }
+    res.status(200).send(courses)
+    
 }
 
-const newRegister = async (req, res) => {
+const newCourse = async (req, res) => {
     try {
         const courses = new Courses(req.body);
 
@@ -81,4 +97,10 @@ const deleteC = async (req, res) => {
             message: error.message
         })
     }
+}
+module.exports = {
+    getAll,
+    updateCourse,
+    deleteC,
+    newCourse
 }

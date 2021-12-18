@@ -41,7 +41,7 @@ cursos e plataformas gratuitas para estudar e tirar dúvidas.
 - Listar todas as pessoas e cursos que estão cadastrados no sistema;
 - Conseguir visualizar o cadastro de alunos pelo Id;
 - Listar cursos pela area ou pelo nome;
-- Cadastrar pessoas que estejam em caso de vulnerabilidade social;
+- Cadastrar alunos e cursos gratuitos;
 - Atualizar informaçẽs de cursos e de alunos;
 - Deletar cursos ou cadastro de alunos;
 <br>

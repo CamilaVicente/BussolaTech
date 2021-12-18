@@ -1,5 +1,5 @@
 const Students = require('../models/studentSchema');
-const mongoose = require('mongoose');
+
 
 
 //GET/todo //Rota que retorna uma lista com todos os itens 
@@ -20,7 +20,7 @@ const searchAll = async (req, res) => {
 
 const searchForId = async (req, res) => {
     try {
-        const studentId = await Students.findById(id)
+        const studentId = await Students.findById(req.params.id)
         res.status(200).json(studentId)
     } catch (error) {
         res.status(500).json({
