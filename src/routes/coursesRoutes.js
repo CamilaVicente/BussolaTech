@@ -3,8 +3,8 @@ const router = express.Router();
 const controller = require("../controllers/coursesController");
 
 router.get("/all", controller.getAll)
-router.get("/?name", controller.search)
-router.get("/?stack", controller.search)
+router.get("/search?", controller.searchName)
+//router.get("/stack?", controller.search)
 router.post("/newRegister", controller.newCourse)
 router.put("/update", controller.updateCourse)
 router.delete("/delete/:id", controller.deleteC)

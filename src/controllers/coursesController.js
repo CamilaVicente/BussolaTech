@@ -1,4 +1,5 @@
 const Courses = require("../models/coursesSchema");
+const mongoose = require('mongoose');
 
 
 const getAll = async (req, res) => {
@@ -14,25 +15,25 @@ const getAll = async (req, res) => {
         })
     }
 }
-const search = async (req, res)=>{
+const searchName = (req, res) => {
+    try {
+        let nameReq = Courses(req.query.name.toLocaleLowerCase());
 
-    const {name , stack} = req.query
+        let courserEnc = Courses.find((courses) => courses.name.toLocaleLowerCase().includes(nameReq));
 
-    const courses = await Courses.find();
-   
+        if (courserEnc.length === 0) {
+            res.status(400).json([{
+                mensagem: "Curso não encontrado"
+            }]);
+        }
+        res.status(200).send(courserEnc)
+    } catch (error) {
+        return res.status(404).send({
+            message: error.message
+        });
 
-    if(name){
-        courses = courses.filter(Courses =>{
-            return Courses.name.toLocaleLowerCase().includes(name)
-        })
     }
-    if(stack){
-        courses = courses.filter(Courses =>{
-            return Courses.stack.toLocaleLowerCase().includes(stack)
-        })
-    }
-    res.status(200).send(courses)
-    
+
 }
 
 const newCourse = async (req, res) => {
@@ -100,8 +101,29 @@ const deleteC = async (req, res) => {
 }
 module.exports = {
     getAll,
-    search,
+    searchName,
     updateCourse,
     deleteC,
     newCourse
 }
+
+/*const searchName = async (req, res)=>{
+
+    const {name , stack} = req.query
+
+    const courses = Courses.find();
+   
+
+    if(name){
+        courses = courses.filter(courses =>{
+            return courses.name.toLocaleLowerCase().includes(name)
+        })
+    }
+    if(stack){
+        courses = courses.filter(courses =>{
+            return courses.stack.toLocaleLowerCase().includes(stack)
+        })
+    }
+    res.status(200).send(courses)
+    
+}*/
