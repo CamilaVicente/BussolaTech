@@ -1,4 +1,4 @@
-# ProjetoFinalReprograma
+# Bussola Tech - Back End
 Bussola Tech 2021
 
 <h1 align="center">
@@ -142,8 +142,8 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 | Método HTTP  | Endpoint              | Descrição                                  |
 | ------------ | --------------------- | ------------------------------------------ |
 | GET          | `/courses/all`            | Retorna todos os cursos                 |
-| GET          | `/courses/search/:name   | Retorna o curso pelo nome       |
-| GET          | `/courses/search/:stack  | Retorna cursos de acordo com a stack específica (frontend, backend e fullstack)       |
+| GET          | `/courses/search/:name`  | Retorna o curso pelo nome       |
+| GET          | `/courses/search/:stack`  | Retorna cursos de acordo com a stack específica (frontend, backend e fullstack)       |
 | POST         | `/courses/newRegister`   | Cadastra um novo curso na plataforma                |
 | PUT          | `/courses/update` | Atualização ou Alteração informações dos cursos           |
 | DELETE       | `/courses/delete/:id` | xclusão de cursos obsoletos ou fora do ar               |
