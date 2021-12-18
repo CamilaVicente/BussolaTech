@@ -20,8 +20,8 @@ const coursesSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        required: true,
-        select: false //pra quando buscar no bd essa informação não vir na consulta
+        required: true
+
     },
 
 }, {

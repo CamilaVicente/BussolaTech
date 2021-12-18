@@ -1,3 +1,17 @@
+const express = require("express");
+const router = express.Router();
+const controller = require("../controllers/studentController");
+
+router.get("/all", controller.getAll)
+router.get("/search/:name", controller.searchForName)
+router.get("/seach/:stack", controller.stack)
+router.post("/newRegister", controller.newCourse)
+router.put("/update", controller.updateCourse)
+router.delete("/delete/:id", controller.deleteC)
+
+module.exports = router
+
+
 /*
 [GET]/cursos - retornar todos os cursos
 [GET]/cursos/:nome-do-curso - retorna curso de acordo com o nome

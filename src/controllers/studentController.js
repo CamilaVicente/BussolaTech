@@ -20,7 +20,7 @@ const searchAll = async (req, res) => {
 
 const searchForId = async (req, res) => {
     try {
-        const studentId = await Students.findById(req.params.id)
+        const studentId = await Students.findById(id)
         res.status(200).json(studentId)
     } catch (error) {
         res.status(500).json({
@@ -36,7 +36,7 @@ const registerStudent = async (req, res) => {
 
         const newStudent = await student.save()
         res.status(201).json({
-            mensagem: "cadastro criado com sucesso",
+            mensagem: "Cadastro criado com sucesso",
             student: newStudent,
         })
 
@@ -51,10 +51,10 @@ const registerStudent = async (req, res) => {
 //PUT/:id //Rota que atualiza algum dado e retorna o atualizado.
 
 const updateStudent = async (req, res) => {
-    try{
+    try {
         const updateStudent = await Students.findById(req.params.id);
 
-        if(updateStudent){
+        if (updateStudent) {
 
             updateStudent.name = req.body.name || updateStudent.name
             updateStudent.email = req.body.email || updateStudent.email
@@ -65,27 +65,35 @@ const updateStudent = async (req, res) => {
                 message: "Usuário atualizado com sucesso",
                 saveStudent
             })
-        } 
+        }
         res.status(400).json({
             mensagem: "Usuário não encontrado"
         })
     } catch (error) {
-        return res.status(404).send({ message: error.message });
-    }   
+        return res.status(404).send({
+            message: error.message
+        });
+    }
 }
 
 //Delete/:id //Rota que deleta um item baseado em seu id.
-const deleteStudent = async(req, res) => {
+const deleteStudent = async (req, res) => {
     try {
         const deleteStudent = await Students.findById(req.params.id);
 
         if (deleteStudent == null) {
-            res.status(404).json({ message: "Usuário não encontrado." })
+            res.status(404).json({
+                message: "Usuário não encontrado."
+            })
         }
         await deleteStudent.delete();
-         res.status(200).json({ message: "Cadastro deletado com sucesso." })
+        res.status(200).json({
+            message: "Cadastro deletado com sucesso."
+        })
     } catch (error) {
-         res.status(500).json({ message: error.message })
+        res.status(500).json({
+            message: error.message
+        })
     }
 }
 
