@@ -1,12 +1,36 @@
-/*
-[GET]/cursos - retornar todos os cursos
-[GET]/cursos/:nome-do-curso - retorna curso de acordo com o nome
-[GET]/cursos/:stack - retornar cursos de acordo com a stack específica (frontend, backend e fullstack)
+const mongoose = require('mongoose'); // para conectar com o banco de dados
 
-[POST]/cursos - Incluir sugestão de novos cursos
+const coursesSchema = new mongoose.Schema({
 
-[DELETE]/cursos/:id - Sugerir Exclusão de cursos obsoletos ou fora do ar
+    id: mongoose.Schema.Types.ObjectId,
 
-[PATCH]/cursos/:id - Sugerir Atualização ou Alteração informações dos cursos
+    name: {
+        type: String,
+        required: true
+    },
+    link: {
+        type: String,
+        required: true,
+        unique: true,
+        lowercase: true
+    },
+    stack: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
 
-[PUT]/cursos/:id - Sugerir atualização ou Alteração informações dos cursos */
+    },
+
+}, {
+    timestamps: true,
+    select: false
+})
+
+
+const Courses = mongoose.model("Courses", coursesSchema);
+
+module.exports = Courses;
+
