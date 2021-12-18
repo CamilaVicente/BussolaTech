@@ -51,6 +51,14 @@ cursos e plataformas gratuitas para estudar e tirar dúvidas.
     
 <br>
 <br>
+
+## Wireframe
+
+<p align="center">
+<img src="./Wireframe.png" width="450" height="450"/>
+</p>
+<br>
+<br>
     
 ## ⚙️ Funcionalidades
 
