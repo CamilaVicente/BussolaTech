@@ -49,7 +49,7 @@ cursos e plataformas gratuitas para estudar e tirar dúvidas.
 ## 📚 Wireframe
 
 <p align="center">
-<img src="./Wireframe.png" width="350" height="300"/>
+<img src="./Wireframe.png" width="450" height="450"/>
 </p>
 
 O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). 
